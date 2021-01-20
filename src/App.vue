@@ -36,19 +36,17 @@ import NavbarApp from "@/components/header/navbar.vue";
 import welcomeApp from "@/components/header/welcome.vue";
 import FooterContact from "./components/footer/footerContact.vue";
 
-import WOW from "wowjs";
-
+import WOW from "wow.js";
 
 export default {
   components: {
     NavbarApp,
     welcomeApp,
-    FooterContact,
+    FooterContact
   },
   mounted() {
-
     // when scroll add class shrink
-    $(window).scroll(function () {
+    $(window).scroll(function() {
       if ($(window).scrollTop() >= 100) {
         $(".classy-nav-container").addClass("shrink");
         $("#scrollUp").fadeIn(800);
@@ -59,24 +57,26 @@ export default {
     });
 
     // when click scroll Top to zero smoothly
-    $("#scrollUp").click(function () {
+    $("#scrollUp").click(function() {
       $("html, body").animate(
         {
-          scrollTop: 0,
+          scrollTop: 0
         },
         1000
       );
     });
 
-    // active wowjs library
-     new WOW().init();
+    if ($(window).width() >= 767) {
+      // active wowjs library
+      new WOW().init();
+    }
   },
   beforeMount() {
     $("#preloader")
       .delay(1000)
-      .fadeOut(700, function () {
+      .fadeOut(700, function() {
         $("#preloader").remove();
       });
-  },
+  }
 };
 </script>

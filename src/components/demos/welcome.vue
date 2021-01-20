@@ -100,6 +100,7 @@
     background-size: cover;
     min-height: 700px;
     background-position-y: -159px;
+    background-repeat: no-repeat;
   }
   .divimage {
     background: transparent;

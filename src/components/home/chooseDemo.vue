@@ -6,7 +6,7 @@
                 <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                     <img src="@/assets/img/svg/section-icon-1.svg" alt="">
                 </div>
-                <h2 class="wow fadeInUp" data-wow-delay="0.3s" data-wow-offset="337">Choose a demo</h2>
+                <h2 class="wow fadeInLeft" data-wow-delay="0.2s">Choose a demo</h2>
                 <p class="wow fadeInUp" data-wow-delay="0.4s">Nitix will be a perfect platform for presenting your App launch. This Landing Page comes in great and clean designs</p>
             </div>
       <div class="row">

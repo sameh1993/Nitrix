@@ -32,9 +32,8 @@ const jquery = require("jquery");
 window.$ = jquery;
 
 // import wow library globally
-
 import "./assets/css/animate.css";
-import "wowjs"
+import "wow.js"
 
 
 new Vue({

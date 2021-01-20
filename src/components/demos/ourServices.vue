@@ -1,6 +1,6 @@
 <template>
  <!-- ##### Our Services Area Start ##### -->
-    <section class="our_services_area section-padding-100-0 clearfix" id="services">
+    <section class="our_services_area section-padding-100 clearfix" id="services">
         <div class="container">
             
             <div class="section-heading text-center">

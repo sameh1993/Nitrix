@@ -18,7 +18,7 @@
       </div>
 
       <!-- Contact Form -->
-      <div class="row justify-content-center">
+      <div class="row section-padding-0-100 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
           <div class="contact_form">
             <form action="#" method="post" id="main_contact_form" novalidate>
