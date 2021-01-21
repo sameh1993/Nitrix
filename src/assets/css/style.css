@@ -48,7 +48,6 @@
 
 @import "animate.css";
 @import "classy-nav.min.css";
-/* @import "dzsparallaxer.css"; */
 @import "magnific-popup.css";
 @import "animated-headline.css";
 @import "themify-icons.css";
@@ -156,9 +155,9 @@ ol {
   height: 90px;
   /* background: url(../img/core-img/shape1.png) no-repeat; */
 }
-.header-area .light.classy-nav-container a {
+/* .header-area .light.classy-nav-container a {
   color: #fff !important;
-}
+} */
 .header-area .blue.classy-nav-container a {
   color: #04d0ff;
 }
@@ -166,9 +165,6 @@ ol {
   color: #fff;
 }
 
-.classy-nav-container a:focus, .classy-nav-container a:hover {
-  font-size: 16px;
-}
 .header-area.sticky .classy-navbar-toggler .navbarToggler span {
   background: #333 !important;
 }
@@ -812,6 +808,9 @@ ol {
   );
   -webkit-transition: all 500ms;
   transition: all 500ms;
+  margin: 0 9px;
+  margin-top: 25px;
+
 }
 
 .dream-btn:hover {
@@ -878,14 +877,8 @@ ol {
 .dark.classy-nav-container {
   background-color: transparent;
 }
-.nav-brand {
-  color: #fff !important;
-  letter-spacing: 1px;
-}
-.nav-brand.light:hover,
-.nav-brand.light:focus {
-  color: #fff !important;
-}
+
+
 .classy-navbar {
   height: 90px;
   padding: 0;
@@ -1095,12 +1088,7 @@ ol {
   background: #fff;
   color: #2ea9fd;
 }
-.bub-right {
-  /* background: url("../img/svg/bg_hero.svg") no-repeat center right; */
-}
-.bub-left {
-  /* background: url("../img/svg/benefits-bg.svg") no-repeat center left; */
-}
+
 
 @media (max-width: 992px) {
   .header-ilustration-1 {
@@ -1420,9 +1408,7 @@ p.artficial:before {
   margin: 0 auto;
 }
 @media (max-width: 767px) {
-  .fullscreen-bg {
-    /* background: url("video/video-frame.PNG") center center / cover no-repeat; */
-  }
+
   .welcome_area.video .desc {
     max-width: 80%;
     margin: 0 auto;
@@ -1831,9 +1817,6 @@ p.artficial:before {
   color: #25cbd3;
 }
 
-.services-block-four .inner-box h3 a:hover {
-}
-
 .services-block-four .inner-box .text {
   font-size: 14px;
   color: #888;
@@ -2105,8 +2088,7 @@ p.artficial:before {
   padding: 10px 58px;
   color: #fff;
 }
-.pizza-prop {
-}
+
 .pizza-prop li {
   padding: 5px 0;
 }

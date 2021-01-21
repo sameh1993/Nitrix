@@ -2,6 +2,7 @@
   <div
     class="classy-nav-container bg-transparent breakpoint-off fixed-top"
     :class="$route.name == 'demoOne' ? 'demoOne' : ''"
+    id="navbar"
   >
     <div class="container">
       <!-- Classy Menu -->
@@ -9,7 +10,7 @@
         <!-- Logo -->
         <router-link class="nav-brand" to="/">
           <img src="@/assets/img/core-img/logo.png" alt="logo" />
-          Nitix .
+          Nitix.
         </router-link>
 
         <!-- Navbar Toggler -->
@@ -38,7 +39,7 @@
                 <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#about">About Us</a>
               </li>
               <li>
                 <a href="#services">Services</a>
@@ -70,25 +71,14 @@
 .classy-navbar-toggler .navbarToggler span {
   background-color: #fff;
 }
-#nav {
-  margin-bottom: 0 !important;
-  .classynav > ul > li > a {
-    color: #fff !important;
-  }
-  @include maxScreen(lg) {
-    .classy-nav-container .classynav > ul > li > a {
-      color: #fff !important;
-    }
-  }
-}
 
-.aboutUs-section,
-.demoTwo-section {
-  .classy-nav-container .nav-brand,
-  .classynav ul li a {
-    color: #fff !important;
-  }
-}
+// .aboutUs-section,
+// .demoTwo-section {
+//   .classy-nav-container .nav-brand,
+//   .classynav ul li a {
+//     color: #fff !important;
+//   }
+// }
 
 .classy-nav-container {
   background-color: #281b87;
@@ -98,7 +88,8 @@
     line-height: 2.7 !important;
   }
 
-  .classy-nav-container a:focus, .classy-nav-container a:hover {
+  .classy-nav-container a:focus,
+  .classy-nav-container a:hover {
     font-size: 16px;
   }
   @include minScreen(lg) {
@@ -133,34 +124,65 @@
 }
 
 .demoFour-section,
+.services-section,
 .demoOne-section {
   .classy-nav-container .nav-brand {
     color: #000 !important;
   }
-  .classy-nav-container a {
-        color : #000 !important;
-    }
+  .classynav li a {
+    color: #333 !important;
+  }
 
   .classy-navbar-toggler .navbarToggler span {
     background: #333 !important;
   }
 }
 
+.demoTwo-section {
+  .classy-nav-container .nav-brand {
+    color: #fff !important;
+  }
+  .classynav li a {
+    color: #fff !important;
+  }
+
+  .classy-navbar-toggler .navbarToggler span {
+    background: #fff !important;
+  }
+}
+
 .demoThree-section {
   .classy-nav-containe {
     li a {
-      color: #04d0ff;
+      color: #04d0ff ;
       font-size: 17px;
       font-weight: 300;
     }
     .nav-brand {
-      color: #04d0ff !important;
+      color: #04d0ff  !important;
       font-weight: 600;
       font-weight: 600;
     }
   }
 }
 
+.shrink {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #d7dfef;
+  #dreamNav {
+    .nav-brand {
+      color: #000 !important;
+    }
+    .classynav li a {
+      color: #333 !important;
+    }
+  }
+}
+
+.services-section,
 .demoFour-section {
   @include maxScreen(lg) {
     .classy-navbar-toggler .navbarToggler span {

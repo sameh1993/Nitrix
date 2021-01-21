@@ -30,7 +30,7 @@
             <div class="service_icon">
               <img :src="item.mainImg" class="colored-icon" alt="" />
               <img :src="item.img" class="white-icon" alt="" />
-              <span class="step-num">1</span>
+              <span class="step-num"> {{index + 1}} </span>
             </div>
             <h6>{{ item.title }}</h6>
             <p>
@@ -47,6 +47,7 @@
 .pricing-section {
   .how {
     padding-bottom: 0 !important;
+    padding-top: 100px;
     .row > div:last-child {
       margin-bottom: 0 !important;
     }

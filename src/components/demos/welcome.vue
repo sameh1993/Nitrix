@@ -13,12 +13,20 @@
             <!-- Welcome Content -->
             <div class="col-12 col-lg-6 col-md-12">
               <div class="welcome-content">
-                <div class="welcome-content">
+                <div  v-if="$route.name != 'demoFour'" class="welcome-content">
                   <div class="promo-section">
                     <h3 class="special-head">{{currentItem.subTitle}}</h3>
                   </div>
                 </div>
-                <h1 class="wow fadeInUp b-text" data-wow-delay="0.2s">{{ currentItem.title }}</h1>
+                <div v-if="$route.name == 'demoFour'" class="promo-section">
+                  <div class="integration-link">
+                    <div class="integration-icon">
+                      <p class="badge">Update</p>
+                    </div>
+                    <span class="integration-text">Get creative landing page tempate for your App!</span>
+                  </div>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay="0.2s">{{ currentItem.title }}</h2>
                 <p class="wow fadeInUp" data-wow-delay="0.3s">{{ currentItem.para }}</p>
 
                 <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
@@ -68,9 +76,6 @@
 .welcome_area {
   min-height: 100vh;
   overflow: hidden;
-  @include maxScreen(lg) {
-    
-  }
   .row {
     & > div {
       margin: 40px 0;
@@ -79,21 +84,48 @@
         color: #777;
       }
     }
+    @include maxScreen(md) {
+      h3 {
+        font-size: 18px !important;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      .btn {
+        font-size: 12px;
+        margin: 0 4px;
+        min-width: 121px;
+      }
+    }
   }
   .btn {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
   .divimage {
     background: url("../../assets/img/svg/bg_hero.svg") no-repeat center right;
   }
   @include maxScreen(lg) {
     .img {
-      display:none;
+      display: none;
+    }
+    h3 {
+      font-size: 28px !important;
+    }
+    .btn {
+      font-size: 11px;
+      min-width: 121px;
+      margin: 0 3px;
     }
   }
 }
-
+.demoOne-section {
+  .welcome-content {
+    h2 {
+      color: #000;
+    }
+  }
+}
 .demoTwo-section {
   .welcome_area {
     background-image: url("../../assets/img/bg-img/header2.png");
@@ -105,9 +137,11 @@
   .divimage {
     background: transparent;
   }
+  .special-head {
+    color: #f8f517;
+  }
   h1 {
     color: #fff !important;
-
   }
   p {
     color: #fff !important;
@@ -118,9 +152,18 @@
 }
 
 .demoThree-section {
-  .welcome_area .divimage {
-    background: url("../../assets/img/bg-img/bg-6.png") no-repeat center;
-    background-size: cover;
+  .welcome_area {
+    .divimage {
+      background: url("../../assets/img/bg-img/bg-6.png") no-repeat center;
+      background-size: cover;
+    }
+    h2 {
+      color: #000;
+      font-size: 45px;
+      span {
+        color: #10a6ec;
+      }
+    }
   }
 }
 
@@ -128,6 +171,13 @@
   .welcome_area .divimage {
     background: url("../../assets/img/bg-img/bg3.png") no-repeat;
     background-size: cover;
+  }
+  h2 {
+    color: #000;
+    font-size: 45px;
+    span {
+      color: #10a6ec;
+    }
   }
 }
 
@@ -137,7 +187,6 @@
 </style>
 
 <script>
-
 export default {
   data() {
     return {

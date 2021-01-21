@@ -1,6 +1,6 @@
 <template>
   <!-- ##### About Us Area Start ##### -->
-  <section class="about-us-area section-padding-100-0 clearfix">
+  <section id="aboutTwo"  class="about-us-area section-padding-100-100 clearfix">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-lg-6">
@@ -33,11 +33,22 @@
   <!-- ##### About Us Area End ##### -->
 </template>
 
-<style lang="scss" scoped>
-.demoTwo-section {
-  .about-us-area {
+<style lang="scss">
+@import "@/assets/_Rules.scss";
+
+.about-us-area {
+  @include  maxScreen(md) {
+    h4 {
+      font-size: 24px;
+    }
+  }
+}
+
+.demoTwo-section,
+.aboutUs-section {
+  #aboutTwo {
     .row {
-      flex-direction: row-reverse;
+      flex-direction: row-reverse !important;
     }
     p {
       color: #777;
@@ -47,14 +58,8 @@
 }
 
 .aboutUs-section {
-  .about-us-area {
-    .row {
-      flex-direction: row-reverse;
-    }
-    p {
-      color: #777;
-    }
-    
+  #aboutTwo {
+    padding: 80px 0;
   }
 }
 

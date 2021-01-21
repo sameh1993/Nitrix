@@ -2,8 +2,8 @@
   <section class="welcome_area transparent dzsparallaxer auto-init animated-headline">
     <div
       class="divimage dzsparallaxer--target"
-      style="background-image: url(img/bg-img/demo-bg.png)"
     >
+      <!-- style="background-image: url(@/assets/img/bg-img/demo-bg.png)" -->
       <div class="container">
         <div class="hero-content transparent">
           <div class="container h-100">
@@ -25,8 +25,7 @@
                   </div>
                   <div class="cd-intro mt-20 default-title">
                     <h2
-                      class="wow slideInLeft cd-headline clip is-full-width"
-                      data-wow-delay="2s"
+                      class="cd-headline clip is-full-width"
                     >
                       <span class="w-text">Nitix Template</span>
                       <span class="cd-words-wrapper">
@@ -44,7 +43,7 @@
                   </div>
                   <!-- Learn More Button-->
                   <div class="dream-btn-group">
-                    <a href="#" class="btn dream-btn mr-3">Choose demo</a>
+                    <a href="#" class="btn dream-btn">Choose demo</a>
                     <a href="#" class="btn dream-btn">Buy Now!</a>
                   </div>
                 </div>
@@ -85,6 +84,16 @@
   @include maxScreen(lg) {
     .cd-intro.default-title > h2 {
       font-size: 30px !important;
+    }
+  }
+  @include maxScreen(md) {
+    h3 {
+      font-size: 27px;
+    }
+    .btn {
+      font-size: 11px;
+      min-width: 121px;
+      margin: 0 4px;
     }
   }
 }

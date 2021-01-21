@@ -83,12 +83,10 @@ label {
   color: #000;
 }
 
-.demoTwo-section {
-  .contact_us_area {
-    background-image: url("../../assets/img/core-img/pattern.png");
-    background-position: top;
-    background-size: inherit;
-    background-repeat: no-repeat;
-  }
+.contact_us_area {
+  background-image: url("../../assets/img/core-img/pattern.png");
+  background-position: top;
+  background-size: inherit;
+  background-repeat: no-repeat;
 }
 </style>

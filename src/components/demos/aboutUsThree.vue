@@ -1,6 +1,6 @@
 <template>
   <!-- ##### About Us Area Start ##### -->
-  <section class="about-us-area resolution section-padding-100 clearfix">
+  <section class="about-us-area resolution section-padding-100-0 clearfix">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-lg-6">
@@ -44,7 +44,7 @@
               data-wow-delay="0.2s"
               style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"
             >
-              <img src="img/svg/section-icon-5.svg" alt />
+              <img src="@/assets/img/svg/section-icon-5.svg" alt />
             </div>
             <h4
               class="fadeInUp"
@@ -73,6 +73,11 @@
         p {
             color: #777;
         }
+    }
+    .about-us-area {
+      .row {
+        flex-direction: row;
+      }
     }
 }
 </style>

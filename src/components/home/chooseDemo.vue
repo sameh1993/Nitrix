@@ -6,13 +6,13 @@
                 <div class="dream-dots justify-content-center wow fadeInUp" data-wow-delay="0.2s">
                     <img src="@/assets/img/svg/section-icon-1.svg" alt="">
                 </div>
-                <h2 class="wow fadeInLeft" data-wow-delay="0.2s">Choose a demo</h2>
-                <p class="wow fadeInUp" data-wow-delay="0.4s">Nitix will be a perfect platform for presenting your App launch. This Landing Page comes in great and clean designs</p>
+                <h2 class="wow fadeInLeft" data-wow-delay="0.2s"> {{listDemos.mainTitle}} </h2>
+                <p class="wow fadeInUp" data-wow-delay="0.4s"> {{listDemos.para}} </p>
             </div>
       <div class="row">
         <div
           class="col-lg-4 col-md-6 col-sm-12"
-          v-for="(item, index) in listDemos"
+          v-for="(item, index) in listDemos.content"
           :key="index"
         >
           <div class="demo-item">
@@ -54,7 +54,10 @@ window.$ = $;
 export default {
   data() {
     return {
-      listDemos: [
+      listDemos: {
+        mainTitle: "Choose A Demo",
+        para: "Nitix will be a perfect platform for presenting your App launch. This Landing Page comes in great and clean designs.",
+        content: [
         {
           path: "/index-demo-1",
           title: "view demo one",
@@ -100,7 +103,8 @@ export default {
           title: "contact page",
           img: require("@/assets/img/demos/demo-9.png"),
         },
-      ],
+      ]
+      },
     };
   },
   mounted() {

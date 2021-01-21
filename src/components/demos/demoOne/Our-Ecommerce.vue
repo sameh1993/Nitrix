@@ -8,7 +8,7 @@
           data-wow-delay="0.2s"
           style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"
         >
-          <img src="img/svg/section-icon-4.svg" alt />
+          <img src="@/assets/img/svg/section-icon-4.svg" alt />
         </div>
         <h2
           class="fadeInUp"

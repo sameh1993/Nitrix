@@ -21,11 +21,12 @@
       <div class="row">
         <!-- Single Team Member -->
         <div
-          class="col-12 col-sm-6 col-lg-3"
+          class="col-12 col-sm-6 col-lg-3 wow fadeInUp"
           v-for="(item, index) in ourTeam"
           :key="index"
+           data-wow-delay="0.5s"
         >
-          <div class="single-team-member wow fadeInUp" data-wow-delay="0.5s">
+          <div class="single-team-member">
             <!-- Image -->
             <div class="team-member-thumb text-center">
               <img :src="item.img" class="center-block" alt="" />
@@ -51,12 +52,17 @@
 </template>
 
 <style lang="scss" scoped>
+@import '@/assets/_Rules.scss';
+
 .our_team_area {
   .row > div{
     background-color: #F2F4F8;
     transform:scalex(.95);
     padding:25px 0;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    @include maxScreen(md) {
+      margin-bottom: 50px !important; 
+    }
   }
 }
 </style>

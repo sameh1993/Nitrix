@@ -25,7 +25,7 @@
     <spread-map></spread-map>
 
     <!-- start our ecommerce -->
-    <our-ecommerce></our-ecommerce>
+    <OurMainFeature></OurMainFeature>
 
     <!-- start FrequentlyQuest -->
     <FrequentlyQuest></FrequentlyQuest>
@@ -59,7 +59,7 @@ import aboutUsthree from "../components/demos/aboutUsThree";
 import HowItWorks from "../components/demos/demoTwo/how-it-works.vue";
 import OurSerives from "../components/demos/ourServices.vue";
 import spreadMap from "../components/demos/demoOne/spread-map.vue";
-import OurEcommerce from "../components/demos/demoOne/Our-Ecommerce";
+import OurMainFeature from "../components/demos/demoTwo/what-we-do";
 import FrequentlyQuest from "../components/demos/demoOne/Frequently-Questions";
 import OurPricingPlans from "../components/demos/demoOne/our-pricing-plans.vue";
 import ourTestimonial from "../components/demos/demoTwo/our-testionail.vue";
@@ -76,8 +76,8 @@ export default {
     aboutUsthree,
     HowItWorks,
     OurSerives,
-        spreadMap,
-    OurEcommerce,
+    spreadMap,
+    OurMainFeature,
     FrequentlyQuest,
     OurPricingPlans,
     ourTestimonial,

@@ -4,7 +4,7 @@
     <div class="container">
   	<div class="section-heading text-center">
 	            <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
-	                <img src="img/svg/section-icon-5.svg" alt="">
+	                <img src="@/assets/img/svg/section-icon-5.svg" alt="">
 	            </div>
 	            <h2 class="fadeInUp" data-wow-delay="0.3s">App Frequently Questions</h2>
 	            <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
@@ -166,7 +166,15 @@
       background-color: #fff;
       width: 87%;
       margin: 0 auto;
+      padding-right:0;
+      padding-left:0;
     }
+  }
+}
+
+.faq-section {
+  .hos-sec-1 {
+    padding: 80px 0;
   }
 }
 </style>
