@@ -21,6 +21,15 @@
       <footer-contact></footer-contact>
     </footer>
     <!-- ##### Footer Area End ##### -->
+
+    
+    <!-- start scroll to top -->
+    <span
+      id="scrollUp"
+      href="#top"
+      style="position: fixed; z-index: 2147483647; display: block;"
+      >Scroll Top</span
+    >
   </div>
 </template>
 

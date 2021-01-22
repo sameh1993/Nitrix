@@ -30,6 +30,10 @@
 </template>
 
 <style scoped>
+.demo {
+  padding-bottom: 90px;
+}
+
 .demo-item img {
   width: 100%;
 }

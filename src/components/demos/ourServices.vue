@@ -8,76 +8,22 @@
                 <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
                     <img src="@/assets/img/svg/section-icon-3.svg" alt="">
                 </div>
-                <h2 class="fadeInUp" data-wow-delay="0.3s">Why Choose Us</h2>
-                <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+                <h2 class="fadeInUp" data-wow-delay="0.3s"> {{ourSer.title}} </h2>
+                <p class="fadeInUp" data-wow-delay="0.4s"> {{ourSer.para}} </p>
             </div>
                 
 
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <!-- Content -->
-                    <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.2s">
-                        <!-- Icon -->
-                        <div class="service_icon">
-                            <img src="@/assets/img/features/1.png" alt="">
-                        </div>
-                        <h6>Creative Chart Modules</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <!-- Content -->
-                    <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.3s">
-                        <!-- Icon -->
-                        <div class="service_icon">
-                            <img src="@/assets/img/features/2.png" alt="">
-                        </div>
-                        <h6>Adaptive Social Assistant</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <!-- Content -->
-                    <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.4s">
-                        <!-- Icon -->
-                        <div class="service_icon">
-                            <img src="@/assets/img/features/3.png" alt="">
-                        </div>
-                        <h6>Ecommerce Embedded</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <!-- Content -->
-                    <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.5s">
-                        <!-- Icon -->
-                        <div class="service_icon">
-                            <img src="@/assets/img/features/4.png" alt="">
-                        </div>
-                        <h6>Notification System</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <!-- Content -->
-                    <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.6s">
-                        <!-- Icon -->
-                        <div class="service_icon">
-                            <img src="@/assets/img/features/5.png" alt="">
-                        </div>
-                        <h6>Creative Layout</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
+
+                <div v-for="(item, index) in ourSer.contentSer" :key="index" class="col-12 col-md-6 col-lg-4">
                     <!-- Content -->
                     <div class="service_single_content text-center mb-100 fadeInUp" data-wow-delay="0.7s">
                         <!-- Icon -->
                         <div class="service_icon">
-                            <img src="@/assets/img/features/6.png" alt="">
+                            <img :src="item.img" alt="">
                         </div>
-                        <h6>Professional Support</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maxi ut accumsan ut, posuere sit Lorem ipsum quam, maximus ut accumsan.</p>
+                        <h6> {{item.title}} </h6>
+                        <p> {{ item.para }} </p>
                     </div>
                 </div>
             </div>

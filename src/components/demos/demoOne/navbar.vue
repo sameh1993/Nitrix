@@ -191,6 +191,10 @@
   }
 }
 
+.classynav li a {
+  font-size: 16px !important;
+}
+
 .bg-transparent {
   background-color: transparent;
   transition: all 0.5s linear;

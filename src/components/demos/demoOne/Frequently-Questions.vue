@@ -6,8 +6,8 @@
 	            <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
 	                <img src="@/assets/img/svg/section-icon-5.svg" alt="">
 	            </div>
-	            <h2 class="fadeInUp" data-wow-delay="0.3s">App Frequently Questions</h2>
-	            <p class="fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+              <h2> {{cardList.mainTitle}} </h2>
+	            <p class="fadeInUp" data-wow-delay="0.4s"> {{cardList.para}} </p>
 	        </div>
       <div class="row align-items-center">
         <div class="col-12 col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-sm-12">
@@ -19,117 +19,30 @@
         </div>
         <div class="col-12 col-lg-6 col-md-12">
           <div id="accordion">
-
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link"
-                    data-toggle="collapse"
-                    data-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    - Who has access to my Security Records
-                  </button>
-                </h5>
-              </div>
-
-              <div
-                id="collapseOne"
-                class="collapse show"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
+            <div v-for="(item, index) in cardList.content" :key="index" class="card">
+              <div class="card-header" :id="item.idHead">
                 <h5 class="mb-0">
                   <button
                     class="btn btn-link collapsed"
                     data-toggle="collapse"
-                    data-target="#collapseTwo"
+                    :data-target="'#'+ item.dataToggle"
                     aria-expanded="false"
-                    aria-controls="collapseTwo"
+                    :aria-controls="item.dataToggle"
                   >
-                    - We are always carefull to Our Clients and service
-                  </button>
-                </h5>
-              </div>
-              <div
-                id="collapseTwo"
-                class="collapse"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion"
-              >
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    - We are always carefull to Our Clients and service
-                  </button>
-                </h5>
-              </div>
-              <div
-                id="collapseThree"
-                class="collapse"
-                aria-labelledby="headingThree"
-                data-parent="#accordion"
-              >
-                <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header" id="headingFive">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                    - how many Security sessions I need?
+                    - {{item.titleCard}}
                   </button>
                 </h5>
               </div>
 
               <div
-                id="collapseFive"
+                :id="item.dataToggle"
                 class="collapse"
-                aria-labelledby="headingFive"
+                :aria-labelledby="item.idHead"
                 data-parent="#accordion"
+                
               >
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
+                  {{item.bodyCard}}
                 </div>
               </div>
             </div>
@@ -178,3 +91,25 @@
   }
 }
 </style>
+
+
+<script>
+export default {
+  data() {
+    return {
+      cardList: {
+        mainTitle: "App Frequently Questions",
+        para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.",
+        content: [
+          {titleCard: "What are the objectives of this App?",idHead:'headingOne', dataToggle: "collapseOne", bodyCard: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa"},
+          {titleCard: "What is the best features and services we deiver?",idHead:'headingTwo', dataToggle: "collapseTwo", bodyCard: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa"},
+          {titleCard: "Why this app important to me?",idHead:'headingThree', dataToggle: "collapseThree", bodyCard: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa"},
+          {titleCard: "how may I take part in and purchase this App?",idHead:'headingFour', dataToggle: "collapseFour", bodyCard: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa"},
+
+        ]
+      }
+    }
+  }
+}
+</script>
+

@@ -5,34 +5,14 @@
       <div class="row align-items-center">
         <div class="col-12 col-lg-6">
           <div class="row">
-            <div class="col-sm-6 col-xs-12">
-              <div class="article hover box-shadow">
-                <i class="ui-content-download article__icon"></i>
-                <h3 class="article__title">High Resolution</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xs-12">
-              <div class="article box-shadow">
-                <i class="ui-paint-palette article__icon"></i>
-                <h3 class="article__title">Creative Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-            </div>
 
-            <div class="col-sm-6 col-xs-12">
-              <div class="article box-shadow">
-                <i class="ui-computer-screen-1 article__icon"></i>
-                <h3 class="article__title">Pixel Perfect</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-xs-12">
+            <div class="col-sm-6 col-xs-12" v-for="(item, index) in aboutThree.serivces" :key="index">
               <div class="article box-shadow">
                 <i class="ui-layers article__icon"></i>
-                <h3 class="article__title">Retina Ready</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <h3 class="article__title"> {{item.title}} </h3>
+                <p> {{item.para}} </p>
               </div>
+
             </div>
           </div>
         </div>
@@ -49,15 +29,15 @@
             <h4
               class="fadeInUp"
               data-wow-delay="0.3s"
-            >Build, edit and create a custom test framework in minutes.</h4>
+            > {{ aboutThree.title }} </h4>
             <p
               class="fadeInUp"
               data-wow-delay="0.4s"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.</p>
+            > {{ aboutThree.para | shorten(197)}} </p>
             <p
               class="fadeInUp"
               data-wow-delay="0.5s"
-            >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quo laboriosam, dolorum ducimus aliquam consequuntur!</p>
+            >{{ aboutThree.para | shorten(130)}}</p>
             <a class="btn dream-btn mt-30 fadeInUp" data-wow-delay="0.6s" href="#">Read More</a>
           </div>
         </div>
@@ -81,3 +61,33 @@
     }
 }
 </style>
+
+
+<script>
+import $ from "jquery";
+window.$ = $;
+
+export default {
+  data(){
+    return {
+      aboutThree :{
+        serivces: [
+          {title: "High Resolution", para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit." },
+          {title: "Creative Design", para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit." },
+          {title: "Pixel Perfect", para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit." },
+          {title: "Retina Ready", para: "Lorem ipsum dolor sit amet, consectetur adipisicing elit." },
+        ],
+        title: "Build, edit and create a custom test framework in minutes.",
+        para: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus, non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc scelerisque in.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molestiae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tempora odit laborum iure inventore possimus laboriosam qui nam. Fugit!`,
+
+      }
+    }
+  },
+  mounted() {
+
+    $(".about-us-area .row > div:first-child > div").addClass("hover");
+  }
+}
+</script>
