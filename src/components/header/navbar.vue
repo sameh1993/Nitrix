@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar classy-nav-container wow fadeInDown breakpoint-off" data-wow-delay="0.3s">
+  <div class="navbar classy-nav-container wow fadeInDown breakpoint-off fixed-top" data-wow-delay="0.3s">
     <div class="container">
       <!-- Classy Menu -->
       <nav class="classy-navbar justify-content-between wow fadeInDown" id="dreamNav">
@@ -68,6 +68,9 @@
   background-color: #d7dfef;
   .nav-brand {
     color: #000 !important;
+  }
+  .classy-navbar-toggler > span > span {
+    background-color: #333 !important;
   }
   @include minScreen(lg) {
     .classynav > li > a {

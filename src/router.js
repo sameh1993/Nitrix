@@ -3,6 +3,7 @@ import Router from "vue-router";
 
 Vue.use(Router);
 
+
 // import Main Components
 import HomePage from "./views/Home.vue";
 const DemoOne = () => import("./views/demo-one.vue");
@@ -13,7 +14,7 @@ const aboutUs = () => import('./views/about-us.vue');
 const services = () => import("./views/services.vue");
 const FAQ = () => import("./views/faq.vue");
 const pricing = () => import('./views/pricing.vue')
-const ContactUs = () => import('./views/contact-us.vue')
+const ContactUs = () => import('./views/contact-us.vue');
 
 
 export default new Router({

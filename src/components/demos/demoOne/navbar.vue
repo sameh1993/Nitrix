@@ -154,12 +154,12 @@
 .demoThree-section {
   .classy-nav-containe {
     li a {
-      color: #04d0ff ;
+      color: #04d0ff;
       font-size: 17px;
       font-weight: 300;
     }
     .nav-brand {
-      color: #04d0ff  !important;
+      color: #04d0ff !important;
       font-weight: 600;
       font-weight: 600;
     }
@@ -172,11 +172,14 @@
   right: 0;
   top: 0;
   background-color: #d7dfef;
-  #dreamNav {
-    .nav-brand {
-      color: #000 !important;
-    }
-    .classynav li a {
+  .nav-brand {
+    color: #000 !important;
+  }
+  .classy-navbar-toggler > span > span {
+    background-color: #333 !important;
+  }
+  @include minScreen(lg) {
+    .classynav > li > a {
       color: #333 !important;
     }
   }
