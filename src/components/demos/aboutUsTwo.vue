@@ -1,6 +1,6 @@
 <template>
   <!-- ##### About Us Area Start ##### -->
-  <section id="aboutTwo" class="about-us-area section-padding-100-100 clearfix">
+  <section id="aboutTwo" class="about-us-area section-padding-100-0 clearfix">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-lg-6">

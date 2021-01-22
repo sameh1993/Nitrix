@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar classy-nav-container wow fadeInDown breakpoint-off"  data-wow-delay="0.3s">
+  <div class="navbar classy-nav-container wow fadeInDown breakpoint-off" data-wow-delay="0.3s">
     <div class="container">
       <!-- Classy Menu -->
       <nav class="classy-navbar justify-content-between wow fadeInDown" id="dreamNav">
@@ -60,10 +60,6 @@
   }
 }
 
-.classynav ul li a:hover {
-  font-size: 14px;
-}
-
 .shrink {
   position: fixed;
   left: 0;
@@ -73,8 +69,10 @@
   .nav-brand {
     color: #000 !important;
   }
-  .classynav li a {
-    color: #333 !important;
+  @include minScreen(lg) {
+    .classynav > li > a {
+      color: #333 !important;
+    }
   }
 }
 
@@ -99,12 +97,16 @@
   }
 
   .classynav > a {
-    width: 110px;
     margin-left: 20px;
     color: rgb(76, 73, 73);
+    @include maxScreen(lg) {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 180px !important;
+    }
   }
 
-  .classycloseIcon .cross-wrap span{
+  .classycloseIcon .cross-wrap span {
     background-color: #fff;
   }
 }

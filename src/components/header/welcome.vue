@@ -83,7 +83,7 @@
   }
   @include maxScreen(lg) {
     .cd-intro.default-title > h2 {
-      font-size: 30px !important;
+      font-size: 27px !important;
     }
   }
   @include maxScreen(md) {
