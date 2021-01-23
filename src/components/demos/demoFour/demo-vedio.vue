@@ -6,8 +6,8 @@
                 <div class="dream-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
                     <img src="@/assets/img/svg/section-icon-1.svg" alt="">
                 </div>
-                <h2 class="b-text fadeInUp" data-wow-delay="0.3s">Watch our demo video</h2>
-                <p class="fadeInUp" data-wow-delay="0.4s" style="color:#888">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
+                <h2 class="b-text fadeInUp" data-wow-delay="0.3s"> {{vedioList.mainTitle}} </h2>
+                <p class="fadeInUp" data-wow-delay="0.4s" style="color:#888"> {{vedioList.main}} </p>
             </div>
             <div class="row align-items-center">
                 <!-- Welcome Video Area -->
@@ -69,3 +69,19 @@
     
 }
 </style>
+
+<script>
+export default {
+    data(){
+        return {
+            vedioList: {
+                mainTitle:"Watch our demo video",
+                mainPara:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.",
+                content: [
+                    {}
+                ]
+            }
+        }
+    }
+}
+</script>

@@ -2122,11 +2122,6 @@ p.artficial:before {
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 992px) {
-  .how {
-    border-top: 1px solid #eee;
-  }
-}
 .how .service_icon .white-icon {
   position: absolute;
   top: 50%;
@@ -2276,6 +2271,11 @@ p.artficial:before {
   display: inline-block;
   margin-left: -60px;
   text-align: center;
+}
+
+.blue-text {
+  color: #10a6ec !important;
+  font-weight: 600;
 }
 
 #section_5-slider-circle .data_cir-content p {
@@ -4653,11 +4653,7 @@ textarea:required {
   width: 100vw !important;
   height: 100vh !important;
 }
-@media only screen and (max-width: 991px) and (min-width: 768px) {
-  .welcome_area.ico {
-    height: 1200px !important;
-  }
-}
+
 /* ##### Slider Area CSS ##### */
 
 .welcome_area .welcome_slides .owl-prev,

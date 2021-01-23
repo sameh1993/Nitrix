@@ -87,38 +87,38 @@ export default {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.",
         contentSer: [
           {
-            img: require("@/assets/img/services/1.svg"),
-            title: "Smart Trading Modules",
+            img: require("@/assets/img/features/1.png"),
+            title: "Creative Chart Modules",
             para:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.",
           },
           {
-            img: require("@/assets/img/services/2.svg"),
+            img: require("@/assets/img/features/2.png"),
             title: "Adaptive Social Assistant",
             para:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.",
           },
           {
-            img: require("@/assets/img/services/3.svg"),
-            title: "Analyzer of the News",
+            img: require("@/assets/img/features/3.png"),
+            title: "Ecommerce Embedded",
             para:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.",
           },
           {
-            img: require("@/assets/img/services/4.svg"),
-            title: "Exchange Order Management",
+            img: require("@/assets/img/features/4.png"),
+            title: "Notification System",
             para:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.",
           },
           {
-            img: require("@/assets/img/services/5.svg"),
-            title: "Module of Price Notification",
+            img: require("@/assets/img/features/5.png"),
+            title: "Creative Layout",
             para:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.",
           },
           {
-            img: require("@/assets/img/services/6.svg"),
-            title: "Crypto Trading Platform",
+            img: require("@/assets/img/features/6.png"),
+            title: "Professional Support",
             para:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla neque quam, maximus ut accumsan ut, posuere sit Lorem ipsum.",
           },

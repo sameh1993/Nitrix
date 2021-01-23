@@ -49,11 +49,6 @@
 
 <style lang="scss" scoped>
 .demoTwo-section {
-    .resolution {
-        p {
-            color: #777;
-        }
-    }
     .about-us-area {
       .row {
         flex-direction: row;

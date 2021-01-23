@@ -72,14 +72,6 @@
   background-color: #fff;
 }
 
-// .aboutUs-section,
-// .demoTwo-section {
-//   .classy-nav-container .nav-brand,
-//   .classynav ul li a {
-//     color: #fff !important;
-//   }
-// }
-
 .classy-nav-container {
   background-color: #281b87;
   position: fixed;
@@ -158,12 +150,13 @@
       font-size: 17px;
       font-weight: 300;
     }
-    .nav-brand {
+    
+  }
+  .classy-nav-container .nav-brand {
       color: #04d0ff !important;
-      font-weight: 600;
+      font-weight: bold;
       font-weight: 600;
     }
-  }
 }
 
 .shrink {
@@ -172,15 +165,17 @@
   right: 0;
   top: 0;
   background-color: #d7dfef;
-  .nav-brand {
-    color: #000 !important;
-  }
-  .classy-navbar-toggler > span > span {
-    background-color: #333 !important;
-  }
-  @include minScreen(lg) {
-    .classynav > li > a {
-      color: #333 !important;
+  .classy-navbar {
+    .nav-brand {
+      color: #000 !important;
+    }
+    .classy-navbar-toggler > span > span {
+      background-color: #333 !important;
+    }
+    @include minScreen(lg) {
+      .classynav li > a {
+        color: #333 !important;
+      }
     }
   }
 }

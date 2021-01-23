@@ -26,7 +26,7 @@
                     <span class="integration-text">Get creative landing page tempate for your App!</span>
                   </div>
                 </div>
-                <h2 class="wow fadeInUp" data-wow-delay="0.2s">{{ currentItem.title }}</h2>
+                <h2 class="wow fadeInUp" v-html="currentItem.title" data-wow-delay="0.2s"></h2>
                 <p class="wow fadeInUp" data-wow-delay="0.3s">{{ currentItem.para }}</p>
 
                 <div class="dream-btn-group wow fadeInUp" data-wow-delay="0.4s">
@@ -58,6 +58,7 @@
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -106,12 +107,15 @@
     background: url("../../assets/img/svg/bg_hero.svg") no-repeat center right;
   }
   @include maxScreen(lg) {
-    .img {
-      display: none;
-    }
+    background-position-y: 0 !important;
     h3 {
       font-size: 28px !important;
     }
+
+    .img {
+      display:none;
+    }
+    
     .btn {
       font-size: 11px;
       min-width: 121px;
@@ -209,7 +213,7 @@ export default {
       },
       demoThree: {
         subTitle: "Crypto App landing page template",
-        title: "Track your Crypto Coins and Markets",
+        title: `Track your <span class='bold blue-text'> Crypto Coins </span> and Markets`,
         para: `We have over 15 year exprience in business consultting arena. We
                 have over 15 year exprience in business consultting arena and
                 artficial intelligence.`,
